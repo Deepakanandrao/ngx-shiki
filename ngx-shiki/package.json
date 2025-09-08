@@ -1,0 +1,64 @@
+{
+  "name": "ngx-shiki",
+  "version": "1.0.0",
+  "description": "Angular component library for syntax highlighting using Shiki",
+  "main": "dist/ngx-shiki/index.js",
+  "types": "dist/ngx-shiki/index.d.ts",
+  "scripts": {
+    "gogo": "npm run build:lib && npm run pack && npm install ./dist/ngx-shiki/ngx-shiki-*.tgz && npm run serve:demo",
+    "ng": "ng",
+    "start": "ng serve",
+    "build:lib": "ng build ngx-shiki",
+    "build:demo": "ng build demo",
+    "serve:demo": "ng serve demo",
+    "build:prod": "ng build ngx-shiki --configuration production",
+    "test": "ng test",
+    "lint": "ng lint",
+    "pack": "cd dist/ngx-shiki && npm pack",
+    "publish": "npm publish dist/ngx-shiki --access public"
+  },
+  "keywords": [
+    "angular",
+    "syntax-highlighting",
+    "shiki",
+    "code",
+    "highlight",
+    "typescript"
+  ],
+  "author": "Deep Anandrao",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ngx-shiki"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/ngx-shiki/issues"
+  },
+  "homepage": "https://github.com/yourusername/ngx-shiki#readme",
+  "dependencies": {
+    "@angular/animations": "20.2.0",
+    "@angular/common": "20.2.0",
+    "@angular/compiler": "20.2.0",
+    "@angular/core": "20.2.0",
+    "@angular/forms": "20.2.0",
+    "@angular/platform-browser": "20.2.0",
+    "@angular/platform-browser-dynamic": "20.2.0",
+    "@angular/router": "20.2.0",
+    "ngx-shiki": "file:dist/ngx-shiki/ngx-shiki-0.0.1.tgz",
+    "rxjs": "~7.8.1",
+    "shiki": "^1.29.2",
+    "tslib": "^2.6.2",
+    "zone.js": "~0.15.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "20.2.0",
+    "@angular/cli": "20.2.0",
+    "@angular/compiler-cli": "20.2.0",
+    "ng-packagr": "20.2.0",
+    "typescript": "~5.8.0"
+  },
+  "peerDependencies": {
+    "@angular/common": "20.2.0",
+    "@angular/core": "20.2.0"
+  }
+}

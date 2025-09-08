@@ -1,0 +1,59 @@
+:host {
+  display: block;
+
+  .ngx-shiki-container {
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .ngx-shiki-header {
+    display: flex;
+    height: 1.5rem;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5em 1em;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .ngx-shiki-filename {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 0.9em;
+    opacity: 0.7;
+  }
+
+  .ngx-shiki-copy-btn {
+    background: none;
+    border: none;
+    padding: 0.4em;
+    cursor: pointer;
+    color: inherit;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    margin-left: 1rem;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.success {
+      color: #28a745;
+    }
+  }
+
+  .ngx-shiki-content {
+    position: relative;
+    ::ng-deep {
+      pre.shiki {
+        padding: 16px;
+        padding-top: 3rem;
+        margin: 0 !important;
+      }
+    }
+  }
+}

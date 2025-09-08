@@ -1,0 +1,101 @@
+.demo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.demo-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.demo-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.demo-header p {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.control-group label {
+  font-weight: 600;
+  color: #495057;
+  font-size: 14px;
+}
+
+.control-group select,
+.control-group input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.control-group input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.examples {
+  margin-top: 2rem;
+}
+
+.examples h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #343a40;
+}
+
+.example {
+  margin-bottom: 2rem;
+}
+
+.example h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #495057;
+  padding-left: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.dynamic-controls {
+  margin-bottom: 20px;
+}
+
+.dynamic-controls textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  resize: vertical;
+}
+
+@media (max-width: 768px) {
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-header h1 {
+    font-size: 2rem;
+  }
+}

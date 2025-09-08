@@ -1,0 +1,63 @@
+<div class="demo-container">
+  <header class="demo-header">
+    <h1>NgxShiki Demo</h1>
+    <p>Angular component for beautiful syntax highlighting using Shiki</p>
+  </header>
+
+  <div class="controls">
+    <div class="control-group">
+      <label>Language:</label>
+      <select [(ngModel)]="selectedLanguage">
+        <option *ngFor="let lang of supportedLanguages" [value]="lang">{{ lang }}</option>
+      </select>
+    </div>
+
+    <div class="control-group">
+      <label>Theme:</label>
+      <select [(ngModel)]="selectedTheme">
+        <option *ngFor="let theme of supportedThemes" [value]="theme">
+          {{ theme | titlecase }}
+        </option>
+      </select>
+    </div>
+
+    <div class="control-group">
+      <label>
+        <input type="checkbox" [(ngModel)]="showLineNumbers"> Show Line Numbers
+      </label>
+    </div>
+
+    <div class="control-group">
+      <label>
+        <input type="checkbox" [(ngModel)]="showCopyButton"> Show Copy Button
+      </label>
+    </div>
+
+    <div class="control-group">
+      <label>
+        <input type="checkbox" [(ngModel)]="showFilename"> Show Filename
+      </label>
+    </div>
+
+    <div class="control-group" *ngIf="showFilename">
+      <label>Filename:</label>
+      <input type="text" [(ngModel)]="filename" placeholder="Enter filename">
+    </div>
+  </div>
+
+  <div class="examples">
+    <h2>Examples</h2>
+
+    <div class="example">
+      <h3>HTML Example</h3>
+      <ngx-shiki
+        [code]="htmlExample"
+        [language]="selectedLanguage === 'html' ? selectedLanguage : 'html'"
+        [theme]="selectedTheme"
+        [showCopyButton]="showCopyButton"
+        [showFilename]="showFilename && selectedLanguage === 'html'"
+        [filename]="selectedLanguage === 'html' ? filename || 'index.html' : 'index.html'">
+      </ngx-shiki>
+    </div>
+  </div>
+</div>

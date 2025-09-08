@@ -1,0 +1,31 @@
+<div class="ngx-shiki-container" [attr.data-theme]="theme">
+  <!-- Header with filename and copy button -->
+
+
+  <!-- Code content -->
+  <div class="ngx-shiki-content">
+    <div class="ngx-shiki-header" *ngIf="showFilename || showCopyButton">
+      <div class="ngx-shiki-filename" *ngIf="showFilename && filename">
+        <span class="filename-text">{{ filename }}</span>
+      </div>
+      <button *ngIf="showCopyButton" class="ngx-shiki-copy-btn" (click)="copyCode()"
+        [title]="copySuccess ? 'Copied!' : 'Copy code'" [class.success]="copySuccess">
+        <svg *ngIf="!copySuccess" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+        <svg *ngIf="copySuccess" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <polyline points="20,6 9,17 4,12"></polyline>
+        </svg>
+      </button>
+    </div>
+    <div class="ngx-shiki-highlighted-code" [innerHTML]="highlightedCode"></div>
+
+    <!-- Hidden content for extraction -->
+    <div #contentExtractor class="ngx-shiki-content-extractor">
+      <ng-content ></ng-content>
+    </div>
+  </div>
+</div>

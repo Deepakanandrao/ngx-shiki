@@ -44,6 +44,7 @@
     "@angular/platform-browser": "20.2.0",
     "@angular/platform-browser-dynamic": "20.2.0",
     "@angular/router": "20.2.0",
+    "@shikijs/transformers": "^3.12.2",
     "ngx-shiki": "file:dist/ngx-shiki/ngx-shiki-0.0.1.tgz",
     "rxjs": "~7.8.1",
     "shiki": "^1.29.2",

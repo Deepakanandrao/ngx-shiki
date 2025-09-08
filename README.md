@@ -84,8 +84,9 @@ Use in your template:
 
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
-| `language` | `BundledLanguage` | `'html'` | Programming language for syntax highlighting |
-| `theme` | `BundledTheme` | `'github-light'` | Color theme for highlighting |
+| `code` | `string` | `''` | Code content to highlight |
+| `language` | `BundledLanguage` | `'typescript'` | Programming language for syntax highlighting |
+| `theme` | `BundledTheme` | `'github-dark'` | Color theme for highlighting |
 | `showLineNumbers` | `boolean` | `false` | Display line numbers |
 | `showCopyButton` | `boolean` | `true` | Show copy to clipboard button |
 | `showFilename` | `boolean` | `false` | Show filename in header |
@@ -97,15 +98,35 @@ HTML, CSS, JavaScript, TypeScript, JSON, XML, Python, Java, C, C++, C#, PHP, Rub
 
 ## Supported Themes
 
-- `github-light` - GitHub Light
-- `github-dark` - GitHub Dark  
-- `vs-code-light` - VS Code Light
-- `vs-code-dark` - VS Code Dark
-- `dracula` - Dracula
-- `material-theme-palenight` - Material Palenight
-- `one-dark-pro` - One Dark Pro
-- `slack-dark` - Slack Dark
-- `tokyo-night` - Tokyo Night
+- `css-variables` - Theme that uses CSS variables for customization
+- `dark-plus` - VS Code's default dark theme
+- `dracula` - Classic Dracula theme
+- `dracula-soft` - Softer variant of Dracula
+- `github-dark` - GitHub's dark theme
+- `github-dark-dimmed` - GitHub's dimmed dark theme
+- `github-light` - GitHub's light theme
+- `hc_light` - High contrast light theme
+- `light-plus` - VS Code's default light theme
+- `material-theme` - Material theme
+- `material-theme-darker` - Darker variant of Material theme
+- `material-theme-lighter` - Lighter variant of Material theme
+- `material-theme-ocean` - Ocean variant of Material theme
+- `material-theme-palenight` - Palenight variant of Material theme
+- `min-dark` - Minimalistic dark theme
+- `min-light` - Minimalistic light theme
+- `monokai` - Classic Monokai theme
+- `nord` - Nord theme
+- `one-dark-pro` - One Dark Pro theme
+- `poimandres` - Poimandres theme
+- `rose-pine` - Rosé Pine theme
+- `rose-pine-dawn` - Rosé Pine Dawn theme
+- `rose-pine-moon` - Rosé Pine Moon theme
+- `slack-dark` - Slack dark theme
+- `slack-ochin` - Slack Ochin theme
+- `solarized-dark` - Solarized dark theme
+- `solarized-light` - Solarized light theme
+- `vitesse-dark` - Vitesse dark theme
+- `vitesse-light` - Vitesse light theme
 
 ## Examples
 

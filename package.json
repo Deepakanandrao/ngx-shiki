@@ -25,16 +25,16 @@
     "highlight",
     "typescript"
   ],
-  "author": "Deep Anandrao",
+  "author": "Deepak Anandrao",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/ngx-shiki"
+    "url": "https://github.com/Deepakanandrao/ngx-shiki"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/ngx-shiki/issues"
+    "url": "https://github.com/Deepakanandrao/ngx-shiki/issues"
   },
-  "homepage": "https://github.com/yourusername/ngx-shiki#readme",
+  "homepage": "https://github.com/Deepakanandrao/ngx-shiki#readme",
   "dependencies": {
     "@angular/animations": "20.2.0",
     "@angular/common": "20.2.0",
